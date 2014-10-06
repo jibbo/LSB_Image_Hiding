@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LSB replacement technique</title>
+	<link rel="stylesheet" href="lsb.css">
+</head>
+<body>
+	<div id="error" class="horiz-center" style="display:none;">Errors occured.</div>
+	<div id="imgs"></div>
+	<div id="out" style="display:none;float:left;">
+		<canvas id="elab" ></canvas>
+		<canvas id="extract" ></canvas>
+		<p><span style="margin:15px;">Replaced Layer: <span id="replay" >4</span></span>
+		<input id ="rep_layer" type="range" min="1" max="8" value="4" /></p>
+		<p><span style="margin:15px;">Inserted Layer: <span id="inslay" >8</span></span>
+		<input id ="ins_layer" type="range" min="1" max="8" value="8" /></p>
+		
+	</div>
+	
+	<div id="droparea1" class="dragandroparea"><p>Drag the original image here!</p></div>
+	<div id="droparea2" class="dragandroparea" style="display:none;"><p>Drag the watermark image here!</p></div>
+	
+	
+
+	<!--js scripts-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+	<script type="text/javascript" src="filters.js"></script>
+	<script type="text/javascript" src="navigation.js"></script>
+</body>
+</html>

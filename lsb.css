@@ -1,0 +1,51 @@
+html{
+	font-family: Helvetica, Verdana, sans-serif;
+}
+body{
+	margin: 0;
+	padding: 8px;
+}
+
+canvas{
+	border:3px solid #1abc9c;
+	border-radius: 5px;
+	float: left;
+	width: 350px;
+	height: 350px;
+	margin-bottom: 15px;
+}
+
+.dragandroparea
+{
+	width: 350px;
+	border:3px solid #1abc9c;
+	text-align: center;
+	color:#16a085;
+	vertical-align:middle;
+	font-size: 200%;
+	float:left;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+#error{
+	text-align: center;
+	background-color: #e74c3c;
+	color:white;
+	border: 1px solid #c0392b;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.horiz-center{
+	width: 300px;
+	margin: auto;
+}
+.drop-enter{
+	border:3px dotted #1abc9c;
+}
+.anim-scale{
+	-webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+}
